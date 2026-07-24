@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/74af98521d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!-- --------------------------- Home ------------------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><b><span>S</span></b>ukla.</h1>
+                <!-- <img src="Images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h2>Hi!</h2>
+                <h1>I<span>'</span>m <span>Sukla</span> Dey </h1>
+
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------- About ------------------------- -->
+ 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Blitz1.png.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <h2><b>Hi,I'm Sukla Dey</b></h2>
+                    <p>Full Stack Developer |Software Developer | AI Enthusiast | CSE Student</p>
+                    <h3><i class="fa-solid fa-bullseye"></i> CAREER OBJECTIVE</h3>
+                    <p>To obtain a challenging position in a reputable organization where I can apply my technical
+                       skills, problem-solving abilities and passion for software development to contribute to
+                       innovative projects and grow as a computer science professional. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>HTML, CSS, JavaScript, C, Python, Java</li>
+                            <li><span>Frameworks & Libraries</span><br>React, Node.js, Express, Tailwind CSS</li>
+                            <li><span>Databades</span><br>MySQL, MongoDB</li>
+                            <li><span>Tools & Platforms</span><br>Git, GitHub, VS Code, Postman, Tableau</li>
+                            <li><span>Core Subjects</span><br>Data Structures & Algorithms, OOPs, DBMS, Computer Network</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2027 |  CGPA 7.6/10</span><br>B.Tech in CSE from NSHM KNOWLEDGE CAMPUS,Durgapur</li>
+                            <li><span>2022-2023  | 77.4%</span><br> Higher Secondary from Panchal High School</li>
+                            <li><span>2020-2021  | 94.4%</span><br>Matriculation from Panchal Girls' High School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------- Services ----------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+               <i class="fa-solid fa-mobile-retro"></i>
+               <h2>Frontend Development</h2>
+               <p>Create clean and responsive user interfaces.</p>
+               <h3>Skills: HTML, CSS, JavaScript, React, Tailwind CSS</h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+               <h2> Full Stack Web Development</h2>
+               <p>Build responsive and scalable web application using modern technologies.</p>
+               <h3>Skills: React.js, Node.js, Express.js, MySQl, JavaScript</h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+               <h2>AI Integration</h2>
+               <p>Integrate AI features into web applications.</p>
+               <h3>Skills: Gemini API, Resume Analysis, AI Chat, Recommendation Systems, AI AI-generated Insights</h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i>
+               <h2>Backend Development</h2>
+               <p>Develop secure backend systems.</p>
+               <h3>Skills: REST APIs, JWT Authentication, CRUD Operations, Database Design, User Management</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ---------------------------------- Portfolio ------------------------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Finance.png">
+                <div class="layer">
+                    <h3>FinanceAI</h3>
+                    <p>. Developed a full-stack personal finance management application with JWT-based authentication and secure user account management.<br>. Built and integrated 10+ REST APIs for income,expenses, and budget and user profile management using Node.js and express.js.<br>. Designed a responsive React Dashboard featuring real-time expense tracking, category-wise analysis and monthly finacial reports.<br>. Integrated Google Gemini API to generate AI-powered spending insights and personalized financial recommendations.<br>. Tested the application with 1000+ sample financial transactions stored in MongoDB Atlas to validate functionality and performance.
+                    </p>
+                    <a href="https://github.com/sukladey/financeAI" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/ai resume.png">
+                <div class="layer">
+                    <h3>ATS Resume Analyzer & AI Interview</h3>
+                    <p>. Developed an AI-powered platform for resume analysis, ATS scoring and interview   preparation.<br>. Implemented resume parsing and keyword matching against 50+ job description.<br>. Integrated Google Gemini API to generate personalized resume improvement suggestions and 10+ interview questions.<br>. Built a responsive dashboard supporting resume upload, ATS score visualization and AI-generated feedback.<br>. Designed secure authentication and user management features using JWT and MongoDB.
+                    </p>
+                    <a href="https://github.com/sukladey/AI-ATS-Platform"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+
+
+<!-- ---------------------------------------- Contact ----------------------------------------- -->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p> <i class="fa-regular fa-envelope"></i> suklad342@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 9907541490</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/sukladey"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/sukladey"> <i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sukla" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://discord.com/sukla_01_87890" ><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="Images/Sukla Dey_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder=" Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Write Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 0 Sukla. Made with <i class="fa-solid fa-heart"></i> by won</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
